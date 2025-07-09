@@ -16,7 +16,7 @@
   .icons {
     display: inline-flex;
     position: absolute;
-    left: 0%;
+    left: -5%;
     font-size: 1.8rem;
     color: var(--primary-color);
     cursor: pointer;
@@ -114,7 +114,9 @@
     align-items: center;
     gap: 10px;
   }
-
+  .nav-auth .join{
+    margin-left: -200px;
+  }
   .practice-cards,
   .expert-cards,
   .pricing-cards,
