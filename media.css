@@ -1,0 +1,256 @@
+/* Media Queries */
+/* @media (max-width:768px) {
+
+  .header {
+    padding: 1.3rem 5%;
+    position: relative;
+  }
+} */
+/* Phone size (max-width: 768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 1.3rem 5%;
+    position: relative;
+  }
+
+  .icons {
+    display: inline-flex;
+    position: absolute;
+    left: 0%;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    z-index: 1; 
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~.icons #close-icon {
+    display: block;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    /* background: rgba(0, 0, 0, 0.1); */
+    box-shadow: 0px 13px 19px 0px #00000012;
+    backdrop-filter: blur(50px);
+    overflow: hidden;
+    transition: .3s ease;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  #check:checked ~ .nav-list {
+    height: 17.7rem;
+  }
+
+  .nav-list a {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    /* transition: .3s ease; */
+    transition: transform 0.3s ease,  opacity 0.3s ease;
+  }
+
+  #check:checked ~ .nav-list a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(.15s * var(--i));
+  }
+
+  .nav-auth {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  .nav-auth .login {
+    display: none;
+  }
+
+  .hero-section,
+  .doctor-highlight,
+  .video-section {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px 0;
+    text-align: left;
+  }
+  .circle{
+    display: none;
+  }
+
+  .hero-text,
+  .video-text {
+    max-width: 100%;
+  }
+
+  .hero-image img,
+  .doctor-image img,
+  .video-card img {
+    max-width: 100%;
+    display: none; /* Ensure images are visible */
+  }
+
+  .btn-auth {
+    flex-direction:row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .practice-cards,
+  .expert-cards,
+  .pricing-cards,
+  .testimonials-container {
+    display: grid;
+    grid-template-columns: repeat( 2,1fr);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card-box,
+  .expert-card,
+  .pricing-card,
+  .testimonial-card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .copyrights {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet size (min-width: 769px and max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    gap: 50px;
+  }
+
+  .nav-bar {
+    gap: 100px;
+  }
+
+  .hero-section,
+  .doctor-highlight,
+  .video-section {
+    gap: 40px;
+  }
+
+  .hero-text,
+  .video-text {
+    max-width: 50%;
+  }
+
+  .hero-image img,
+  .doctor-image img,
+  .video-card {
+    max-width: 50%;
+  }
+
+  .practice-cards,
+  .expert-cards,
+  .pricing-cards,
+  .testimonials-container {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .footer-columns {
+    justify-content: space-between;
+  }
+
+  .card-box,
+  .expert-card,
+  .pricing-card,
+  .testimonial-card {
+    width: 45%;
+  }
+
+  .newsletter-form {
+    width: 70%;
+  }
+}
+
+/* Desktop size (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .header {
+    gap: 70px;
+  }
+
+  .nav-bar {
+    gap: 300px;
+  }
+
+  .hero-section,
+  .doctor-highlight,
+  .video-section {
+    gap: 30px;
+  }
+
+  .practice-cards,
+  .expert-cards,
+  .pricing-cards,
+  .testimonials-container,
+  .footer-columns {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .video-section {
+    width: 1050px;
+  }
+
+  .pricing-section {
+    width: 1050px;
+  }
+}
