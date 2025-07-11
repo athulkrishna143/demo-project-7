@@ -210,7 +210,7 @@ body {
 }
 
 .hero-text {
-  max-width: 704px;
+  /* max-width: 704px; */
 }
 
 .para {
@@ -450,10 +450,10 @@ body {
 }
 
 .price {
+  justify-content: center;
   display: flex;
   gap: 5px;
   margin: 15px 0;
-  justify-content: center;
 }
 
 /* Pricing Section */
@@ -603,7 +603,7 @@ i.fa-solid.fa-heart::before {
 
 /* Testimonials Section */
 .testimonials-section {
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: 0 auto;
   text-align: center;
   padding: 80px 20px;
@@ -733,8 +733,9 @@ i.fa-solid.fa-heart::before {
 .footer-columns {
   display: flex;
   gap: 30px;
-  justify-content: center;
-  max-width: 1041px;
+  /* justify-content:left; */
+  /* max-width: 1041px; */
+  text-align: left;
 }
 
 .column h4 {
@@ -753,7 +754,7 @@ i.fa-solid.fa-heart::before {
 }
 
 .nav-list-footer li {
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-bottom: 20px;
 }
 
@@ -763,9 +764,9 @@ i.fa-solid.fa-heart::before {
 
 .get-in-touch {
   display: flex;
-  align-items: center;
+  align-items:center;
   gap: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   
 }
 .fa-solid.fa-location-dot {
